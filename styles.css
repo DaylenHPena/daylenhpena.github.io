@@ -1,0 +1,92 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+body {
+    --accent-color: rgb(129, 18, 129);
+    --bg-accent-color: #c359c30f;
+
+    font-family: 'Quicksand', sans-serif;
+    color: #555a64;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Secular One', sans-serif;
+}
+
+.full-vh {
+    height: 100vh;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+    transition: all ease;
+}
+
+.bg-light-accent {
+    background-color: var(--bg-accent-color);
+}
+
+.bg-dark {
+    background-color: #261428 !important;
+}
+
+/* FONT */
+.fs-huge {
+    font-size: 60px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn:hover {
+    background-color: white;
+    border-color: var(--accent-color);
+    color: var(--accent-color)
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 .25rem var(--bg-accent-color);
+}
+
+.icon.accent-color{
+
+}
+
+#cover-img{
+    transition:all ease 1s;
+}
+
+@media all and (max-width:575px) {
+    #cover-img{
+        display:none;
+    }
+
+    #home{
+        background-image: url('cover.jpg');
+        background-position: center;
+        color:black !important;
+    }
+
+    #presentation{
+        background-color: rgba(230, 222, 222, 0.656);
+        color:black !important;
+    }
+
+    #cover-contact-icons-div{
+        display:none;
+    }
+}
